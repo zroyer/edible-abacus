@@ -1,25 +1,57 @@
 import React from 'react';
-import logo from './logo.svg';
+import Calculator from './Calculator.js'
+import { Layout, Typography } from 'antd';
 import './App.css';
+const { Header, Footer, Content } = Layout;
+const { Title } = Typography;
+
+const baseStyle = {
+  textAlign: 'center',
+  backgroundColor: '#FFFFFF',
+  padding: '16px',
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Layout>
+      <Header
+        className='header'
+        style={baseStyle}
+      >
+        <Title
+          level={3}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <span
+            role='img'
+            aria-label='abacus'
+          >
+            Edible Abacus 🧮
+          </span>
+        </Title>
+      </Header>
+      <Content
+        className='content'
+        style={baseStyle}
+      >
+        <Calculator />
+      </Content>
+       <Footer
+        style={{
+          ...baseStyle,
+          position: 'absolute',
+          left: 0,
+          bottom: 0,
+          right: 0,
+        }}
+      >
+        <span
+          role='img'
+          aria-label='taco'
+        >
+          Made with 🌮 in Austin, TX
+        </span>
+      </Footer>
+    </Layout>
   );
 }
 
