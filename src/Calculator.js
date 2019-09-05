@@ -33,19 +33,19 @@ function Calculator() {
   return (
     <>
       <Form {...formItemLayout}>
-        <Form.Item label='Strength (%)'>
+        <Form.Item label='💪Strength (%)'>
           <PercentageSlider
             value={state.strength}
             onChange={(strength) => setState(state => ({ ...state, strength }))}
           />
         </Form.Item>
-        <Form.Item label='Weight (g)'>
+        <Form.Item label='🌳Weight (g)'>
           <WeightSlider
             value={state.weight}
             onChange={(weight) => setState(state => ({ ...state, weight }))}
           />
         </Form.Item>
-        <Form.Item label='Servings'>
+        <Form.Item label='🍫Servings'>
           <IntegerSlider
             value={state.serving}
             onChange={(serving) => setState(state => ({ ...state, serving }))}
