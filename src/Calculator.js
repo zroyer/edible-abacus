@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   Form,
   Row,
-  Col,
   Statistic,
 } from 'antd';
 import PercentageSlider from './PercentageSlider.js'
@@ -13,17 +12,17 @@ function Calculator() {
   const [state, setState] = useState({
     strength: 15,
     weight: 28.15,
-    serving: 24,
+    serving: 48,
   });
 
   const formItemLayout = {
     labelCol: {
-      xs: { span: 24 },
-      sm: { span: 8 },
+      xs: { span: 24, offset: 0 },
+      sm: { span: 8, offset: 0 },
     },
     wrapperCol: {
-      xs: { span: 24 },
-      sm: { span: 16 },
+      xs: { span: 20, offset: 2 },
+      sm: { span: 16, offset: 0 },
     },
   };
 
@@ -33,13 +32,13 @@ function Calculator() {
   return (
     <>
       <Form {...formItemLayout}>
-        <Form.Item label='💪Strength (%)'>
+        <Form.Item label='💪Strength'>
           <PercentageSlider
             value={state.strength}
             onChange={(strength) => setState(state => ({ ...state, strength }))}
           />
         </Form.Item>
-        <Form.Item label='🌳Weight (g)'>
+        <Form.Item label='🌳Weight'>
           <WeightSlider
             value={state.weight}
             onChange={(weight) => setState(state => ({ ...state, weight }))}
@@ -52,25 +51,22 @@ function Calculator() {
           />
         </Form.Item>
       </Form>
-      <Row type='flex' justify='center'>
-        <Col
-          span={6}
+      <Row
+        className='statisticsRow'
+        type='flex'
+        justify='center'
+      >
+        <Statistic
+          title='Total Recipe THC (mg)'
           className='statistic'
-        >
-          <Statistic title='Total Recipe THC (mg)'
-            value={recipeTotal}
-            precision={2}
-          />
-        </Col>
-        <Col
-          span={6}
+          value={recipeTotal}
+          precision={2}
+        />
+        <Statistic
+          title='THC/serving (mg)'
           className='statistic'
-        >
-          <Statistic
-            title='THC/serving (mg)'
-            value={recipePerServing}
-            precision={2} />
-        </Col>
+          value={recipePerServing}
+          precision={2} />
       </Row>
     </>
   );

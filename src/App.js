@@ -8,7 +8,6 @@ const { Title } = Typography;
 const baseStyle = {
   textAlign: 'center',
   backgroundColor: '#FFFFFF',
-  padding: '16px',
 };
 
 function App() {
@@ -16,7 +15,10 @@ function App() {
     <Layout>
       <Header
         className='header'
-        style={baseStyle}
+        style={{
+          ...baseStyle,
+          padding: '16px',
+        }}
       >
         <Title
           level={3}
@@ -31,7 +33,10 @@ function App() {
       </Header>
       <Content
         className='content'
-        style={baseStyle}
+        style={{
+          ...baseStyle,
+          padding: '16px',
+        }}
       >
         <Calculator />
       </Content>
