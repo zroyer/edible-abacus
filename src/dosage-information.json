@@ -1,0 +1,60 @@
+{
+	"light": {
+		"expectations": [
+			"Mild relief of pain, stress, anxiety, and other symptoms",
+			"Improved focus and creativity"
+		],
+		"segments": [
+			"First-time consumers",
+			"Microdosers"
+		],
+		"color": "#FFE46E"
+	},
+	"mild": {
+		"expectations": [
+			"Stronger symptom relief",
+			"Euphoria",
+			"May impair coordination and alter perception"
+		],
+		"segments": [
+			"Patients with persistant problems",
+			"Restless sleepers",
+			"Social butterflies"
+		],
+		"color": "#D1E754"
+	},
+	"medium": {
+		"expectations": [
+			"Strong euphoria or unwanted effects in unaccustomed consumers",
+			"May impair coordination and alter perception"
+		],
+		"segments": [
+			"Well-seasoned consumers",
+			"Medical patients with developed tolerances",
+			"Experienced consumers seeking to sustain sleep"
+		],
+		"color": "#9CE76B"
+	},
+	"strong": {
+		"expectations": [
+			"Very strong euphoria in unaccustomed consumers",
+			"Likely to impair coordination and alter perception"
+		],
+		"segments": [
+			"Consumers who have poor GI absorption of cannabinoids",
+			"People with significant tolerance to THC"
+		],
+		"color": "#52B052"
+	},
+	"heavy": {
+		"expectations": [
+			"Can cause extreme side effects such as rapid heart rate, nausea, and pain",
+			"Highly likely to impair coordination and alter perception"
+		],
+		"segments": [
+			"For experienced THC individuals only",
+			"Patients with cancer, inflammatory disorders, or conditions that necessitate high doses"
+		],
+		"color": "#429444"
+	}
+}
