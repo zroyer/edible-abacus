@@ -7,6 +7,7 @@ import {
 import PercentageSlider from './PercentageSlider.js'
 import IntegerSlider from './IntegerSlider.js'
 import WeightSlider from './WeightSlider.js'
+import Expectations from './Expectations.js'
 
 function Calculator() {
   const [state, setState] = useState({
@@ -68,6 +69,7 @@ function Calculator() {
           value={recipePerServing}
           precision={2} />
       </Row>
+      <Expectations />
     </>
   );
 

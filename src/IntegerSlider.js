@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slider, InputNumber, Row, Col } from 'antd';
 
-function PercentageSlider(props) {
+const PercentageSlider = (props) => {
   return (
     <Row>
       <Col span={12}>
@@ -23,6 +23,6 @@ function PercentageSlider(props) {
       </Col>
     </Row>
   );
-  }
+}
 
 export default PercentageSlider;

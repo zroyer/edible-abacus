@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slider, InputNumber, Row, Col } from 'antd';
 
-function WeightSlider(props) {
+const WeightSlider = (props) =>  {
   return (
     <Row>
       <Col span={12}>
@@ -25,6 +25,6 @@ function WeightSlider(props) {
       </Col>
     </Row>
   );
-  }
+}
 
 export default WeightSlider;
