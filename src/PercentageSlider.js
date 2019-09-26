@@ -7,7 +7,7 @@ const PercentageSlider = (props) => {
       <Col span={12}>
         <Slider
           min={0}
-          max={100}
+          max={30}
           onChange={props.onChange}
           value={props.value}
           step={0.01}

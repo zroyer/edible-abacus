@@ -7,13 +7,13 @@ import {
 import PercentageSlider from './PercentageSlider.js'
 import IntegerSlider from './IntegerSlider.js'
 import WeightSlider from './WeightSlider.js'
-import Expectations from './Expectations.js'
+import Effects from './Effects.js'
 
 function Calculator() {
   const [state, setState] = useState({
-    strength: 15,
-    weight: 28.15,
-    serving: 48,
+    strength: 12,
+    weight: 14,
+    numServings: 48,
   });
 
   const formItemLayout = {
@@ -28,7 +28,7 @@ function Calculator() {
   };
 
   const recipeTotal = 10 * state.weight * state.strength;
-  const recipePerServing = 10 * state.weight * state.strength / state.serving;
+  const recipePerServing = 10 * state.weight * state.strength / state.numServings;
 
   return (
     <>
@@ -47,8 +47,8 @@ function Calculator() {
         </Form.Item>
         <Form.Item label='🍫Servings'>
           <IntegerSlider
-            value={state.serving}
-            onChange={(serving) => setState(state => ({ ...state, serving }))}
+            value={state.numServings}
+            onChange={(numServings) => setState(state => ({ ...state, numServings }))}
           />
         </Form.Item>
       </Form>
@@ -69,7 +69,9 @@ function Calculator() {
           value={recipePerServing}
           precision={2} />
       </Row>
-      <Expectations />
+      <Effects
+        perServing={recipePerServing}
+      />
     </>
   );
 
