@@ -7,7 +7,7 @@ const WeightSlider = (props) =>  {
       <Col span={12}>
         <Slider
           min={0}
-          max={57}
+          max={56.69}
           onChange={props.onChange}
           value={props.value}
           step={.01}

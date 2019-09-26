@@ -1,5 +1,5 @@
 import React from 'react';
-import Calculator from './Calculator.js'
+import Calculator from './components/Calculator.js'
 import { Layout, Typography } from 'antd';
 import './App.css';
 const { Header, Footer, Content } = Layout;
