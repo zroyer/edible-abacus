@@ -109,9 +109,12 @@ body {
   }
   .resultsWrapper {
     width: 355px;
-    margin: 16px auto 128px;
+    margin: 16px auto 72px;
   }
   .label {
     font-size: 16px;
+  }
+  .footer {
+    position: relative;
   }
 }
