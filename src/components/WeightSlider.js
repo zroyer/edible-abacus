@@ -26,6 +26,7 @@ const WeightSlider = (props) =>  {
           step={.01}
           value={props.value}
           onChange={props.onChange}
+          type='number'
         />
       </div>
     </div>

@@ -24,6 +24,7 @@ const ServingsSlider = (props) => {
           step={1}
           value={props.value}
           onChange={props.onChange}
+          type='number'
         />
       </div>
     </div>

@@ -107,7 +107,7 @@ body {
   }
   .resultsWrapper {
     width: 355px;
-    margin: 16px auto;
+    margin: 16px auto 48px;
   }
   .label {
     font-size: 16px;

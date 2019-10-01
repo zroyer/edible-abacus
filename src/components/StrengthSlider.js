@@ -26,6 +26,7 @@ const StrengthSlider = (props) => {
           step={0.01}
           value={props.value}
           onChange={props.onChange}
+          type='number'
         />
       </div>
     </div>
