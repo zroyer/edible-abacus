@@ -3,7 +3,6 @@ import Effects from './Effects.js'
 import firebase from '.././util/firebase';
 import { getLevel } from '.././util/helpers';
 import {
-  Row,
   Statistic,
 } from 'antd';
 
@@ -30,11 +29,12 @@ const Results = (props) =>  {
   const dosageInfo = useDosageInfo(getLevel(props.recipePerServing));
   return (
     <div
+      className='resultsWrapper'
       style={{
-        border: `2px solid ${dosageInfo.color}`,
+        border: `4px solid ${dosageInfo.color}`,
       }}
     >
-      <Row
+      <div
         className='statisticsRow'
         type='flex'
         justify='center'
@@ -50,7 +50,7 @@ const Results = (props) =>  {
           className='statistic'
           value={props.recipePerServing}
           precision={2} />
-      </Row>
+      </div>
       <Effects
         dosageInfo={dosageInfo}
       />

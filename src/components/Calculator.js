@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import {
-  Form,
-} from 'antd';
 import StrengthSlider from './StrengthSlider.js'
 import ServingsSlider from './ServingsSlider.js'
 import WeightSlider from './WeightSlider.js'
@@ -29,32 +26,26 @@ function Calculator() {
   });
 
   return (
-    <>
-      <Form>
-        <Form.Item label='💪Strength'>
-          <StrengthSlider
-            value={state.strength}
-            onChange={(strength) => setState(state => ({ ...state, strength }))}
-          />
-        </Form.Item>
-        <Form.Item label='🌳Weight'>
-          <WeightSlider
-            value={state.weight}
-            onChange={(weight) => setState(state => ({ ...state, weight }))}
-          />
-        </Form.Item>
-        <Form.Item label='🍫Servings'>
-          <ServingsSlider
-            value={state.numServings}
-            onChange={(numServings) => setState(state => ({ ...state, numServings }))}
-          />
-        </Form.Item>
-      </Form>
+    <div className='calculatorContainer'>
+      <div className='sliderWrapper'>
+        <StrengthSlider
+          value={state.strength}
+          onChange={(strength) => setState(state => ({ ...state, strength }))}
+        />
+        <WeightSlider
+          value={state.weight}
+          onChange={(weight) => setState(state => ({ ...state, weight }))}
+        />
+        <ServingsSlider
+          value={state.numServings}
+          onChange={(numServings) => setState(state => ({ ...state, numServings }))}
+        />
+      </div>
       <Results
         recipeTotal={recipeTotal}
         recipePerServing={recipePerServing}
       />
-    </>
+    </div>
   );
 
 }

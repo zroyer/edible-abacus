@@ -1,62 +1,31 @@
 import React from 'react';
 import Calculator from './components/Calculator.js'
-import { Layout, Typography } from 'antd';
 import './App.css';
-const { Header, Footer, Content } = Layout;
-const { Title } = Typography;
-
-const baseStyle = {
-  textAlign: 'center',
-  backgroundColor: '#FFFFFF',
-};
 
 function App() {
   return (
-    <Layout>
-      <Header
-        className='header'
-        style={{
-          ...baseStyle,
-          padding: '16px',
-        }}
-      >
-        <Title
-          level={3}
+    <>
+      <div className='header'>
+        <span
+          className='headerTitle'
+          role='img'
+          aria-label='abacus'
         >
-          <span
-            role='img'
-            aria-label='abacus'
-          >
-            Edible Abacus 🧮
-          </span>
-        </Title>
-      </Header>
-      <Content
-        className='content'
-        style={{
-          ...baseStyle,
-          padding: '16px',
-        }}
-      >
-        <Calculator />
-      </Content>
-       <Footer
-        style={{
-          ...baseStyle,
-          position: 'absolute',
-          left: 0,
-          bottom: 0,
-          right: 0,
-        }}
+          Edible Abacus
+        </span>
+      </div>
+      <Calculator />
+      <div
+        className='footer'
       >
         <span
           role='img'
           aria-label='taco'
         >
-          Made with 🌮 in Austin, TX
+          Made with 🌮in Austin, TX
         </span>
-      </Footer>
-    </Layout>
+      </div>
+    </>
   );
 }
 

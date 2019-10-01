@@ -1,10 +1,17 @@
 import React from 'react';
-import { Slider, InputNumber, Row, Col } from 'antd';
+import { Slider, InputNumber } from 'antd';
 
 const StrengthSlider = (props) => {
   return (
-    <Row>
-      <Col span={12}>
+    <div className='sliderColumn'>
+      <span
+        className='label'
+        role='img'
+        aria-label='weight'
+      >
+        Strength 💪
+      </span>
+      <div className='sliderRow'>
         <Slider
           min={0}
           max={30}
@@ -12,8 +19,6 @@ const StrengthSlider = (props) => {
           value={props.value}
           step={0.01}
         />
-      </Col>
-      <Col span={4}>
         <InputNumber
           formatter={value => `${value} %`}
           parser={value => value.replace(' %', '')}
@@ -22,8 +27,8 @@ const StrengthSlider = (props) => {
           value={props.value}
           onChange={props.onChange}
         />
-      </Col>
-    </Row>
+      </div>
+    </div>
   );
 }
 

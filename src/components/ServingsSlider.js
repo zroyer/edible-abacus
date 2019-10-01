@@ -1,10 +1,17 @@
 import React from 'react';
-import { Slider, InputNumber, Row, Col } from 'antd';
+import { Slider, InputNumber } from 'antd';
 
 const ServingsSlider = (props) => {
   return (
-    <Row>
-      <Col span={12}>
+    <div className='sliderColumn'>
+      <span
+        className='label'
+        role='img'
+        aria-label='weight'
+      >
+        Servings 🍫
+      </span>
+      <div className='sliderRow'>
         <Slider
           min={1}
           max={100}
@@ -12,16 +19,14 @@ const ServingsSlider = (props) => {
           value={props.value}
           step={1}
         />
-      </Col>
-      <Col span={4}>
         <InputNumber
           style={{ marginLeft: 16 }}
           step={1}
           value={props.value}
           onChange={props.onChange}
         />
-      </Col>
-    </Row>
+      </div>
+    </div>
   );
 }
 

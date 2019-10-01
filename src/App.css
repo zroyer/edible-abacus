@@ -1,19 +1,109 @@
 @import '~antd/dist/antd.css';
+body {
+  background-color: rgb(246, 246, 246);
+}
+.header,
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 70, 55);
+  color: rgb(255, 255, 255);
+}
+.headerTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+.header {
+  height: 60px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+}
+.calculatorContainer {
+  text-align: center;
+}
+.sliderWrapper {
+  background-color: rgb(255, 255, 255);
+  width: 555px;
+  padding: 8px 24px 24px;
+  margin: 32px auto;
+  border-radius: 4px;
+}
+.resultsWrapper {
+  background-color: rgb(255, 255, 255);
+  width: 555px;
+  padding: 24px 24px;
+  margin: 32px auto;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sliderColumn {
+  text-align: center;
+  margin: 16px 0 0 0;
+}
+.sliderRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.label {
+  color: rgb(3, 70, 56);
+  font-size: 20px;
+  font-weight: 600;
+}
+.ant-slider {
+  width: 100%;
+}
+.ant-input-number {
+  width: 120px;
+}
 .statisticsRow {
-  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .statistic {
-  padding: 0 10px;
+  padding: 0 8px;
   width: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.ant-row {
-  overflow-x: hidden;
+.effectsContainer {
+  margin: 8px 0 0 0;
+  width: 100%;
 }
-@media (max-width: 575px) {
-  .ant-col-xs-24.ant-form-item-label {
-    margin-left: 8.33333333%;
+.expectation,
+.segment {
+  animation: fadeIn 200ms linear both;
+}
+.expectationsContainer,
+.segmentsContainer {
+  margin: 16px 0 0 0;
+  text-align: start;
+}
+@media (max-width: 574px) {
+  .sliderWrapper {
+    width: 355px;
+    margin: 16px auto;
+  }
+  .resultsWrapper {
+    width: 355px;
+    margin: 16px auto;
+  }
+  .label {
+    font-size: 16px;
+  }
+  .footer {
+    position: relative;
   }
 }

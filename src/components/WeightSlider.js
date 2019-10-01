@@ -1,10 +1,17 @@
 import React from 'react';
-import { Slider, InputNumber, Row, Col } from 'antd';
+import { Slider, InputNumber } from 'antd';
 
 const WeightSlider = (props) =>  {
   return (
-    <Row>
-      <Col span={12}>
+    <div className='sliderColumn'>
+      <span
+        className='label'
+        role='img'
+        aria-label='weight'
+      >
+        Weight 🌳
+      </span>
+      <div className='sliderRow'>
         <Slider
           min={0}
           max={56.69}
@@ -12,8 +19,6 @@ const WeightSlider = (props) =>  {
           value={props.value}
           step={.01}
         />
-      </Col>
-      <Col span={4}>
         <InputNumber
           formatter={value => `${value} g`}
           parser={value => value.replace(' g', '')}
@@ -22,8 +27,8 @@ const WeightSlider = (props) =>  {
           value={props.value}
           onChange={props.onChange}
         />
-      </Col>
-    </Row>
+      </div>
+    </div>
   );
 }
 
