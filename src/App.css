@@ -64,7 +64,7 @@ body {
   width: 100%;
 }
 .ant-input-number {
-  width: 120px;
+  width: 135px;
 }
 .statisticsRow {
   display: flex;
@@ -100,6 +100,9 @@ body {
 .ant-statistic-content-value {
   color: rgba(3, 70, 56, 0.85);
 }
+.ant-input-number-input {
+  font-size: 16px;
+}
 @media (max-width: 574px) {
   .sliderWrapper {
     width: 355px;
@@ -107,7 +110,7 @@ body {
   }
   .resultsWrapper {
     width: 355px;
-    margin: 16px auto 72px;
+    margin: 16px auto 128px;
   }
   .label {
     font-size: 16px;
