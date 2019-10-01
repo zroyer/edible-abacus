@@ -72,8 +72,7 @@ body {
   align-items: center;
 }
 .statistic {
-  padding: 0 8px;
-  width: 170px;
+  width: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
