@@ -6,11 +6,7 @@ function App() {
   return (
     <>
       <div className='header'>
-        <span
-          className='headerTitle'
-          role='img'
-          aria-label='abacus'
-        >
+        <span className='headerTitle'>
           Edible Abacus
         </span>
       </div>

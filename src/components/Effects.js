@@ -13,7 +13,7 @@ const Effects = (props) =>  {
               className='expectation'
               key={`${expectation.slice(0, 5)}-${dosageInfo.id}`}
             >
-              - {expectation}
+              ➭ {expectation}
             </div>
           )
         })}
@@ -26,7 +26,7 @@ const Effects = (props) =>  {
               className='segment'
               key={`${segment.slice(0, 5)}-${dosageInfo.id}`}
             >
-              - {segment}
+              ➭ {segment}
             </div>
           )
         })}

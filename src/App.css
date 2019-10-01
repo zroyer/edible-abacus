@@ -23,7 +23,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 30px;
+  height: 40px;
 }
 .calculatorContainer {
   text-align: center;
@@ -56,7 +56,7 @@ body {
   justify-content: space-around;
 }
 .label {
-  color: rgb(3, 70, 56);
+  color: rgba(3, 70, 56, 0.85);
   font-size: 20px;
   font-weight: 600;
 }
@@ -84,12 +84,21 @@ body {
 }
 .expectation,
 .segment {
-  animation: fadeIn 200ms linear both;
+  transition: opacity 1s;
+  color: rgba(3, 70, 56, 0.85);
+  font-weight: 400;
 }
 .expectationsContainer,
 .segmentsContainer {
+  transition: opacity 1s;
   margin: 16px 0 0 0;
   text-align: start;
+}
+.ant-statistic-title {
+  color: rgba(3, 70, 56, 0.65);
+}
+.ant-statistic-content-value {
+  color: rgba(3, 70, 56, 0.85);
 }
 @media (max-width: 574px) {
   .sliderWrapper {
@@ -102,8 +111,5 @@ body {
   }
   .label {
     font-size: 16px;
-  }
-  .footer {
-    position: relative;
   }
 }
