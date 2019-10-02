@@ -14,7 +14,6 @@ function Calculator() {
     weight: 14,
     numServings: 48,
   });
-
   const recipeTotal = getRecipeTotal({
     weight: state.weight,
     strength: state.strength,

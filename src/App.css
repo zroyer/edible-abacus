@@ -31,23 +31,23 @@ body {
 .sliderWrapper {
   background-color: rgb(255, 255, 255);
   width: 555px;
-  padding: 8px 24px 24px;
+  padding: 8px 16px 8px;
   margin: 32px auto;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .resultsWrapper {
   background-color: rgb(255, 255, 255);
   width: 555px;
-  padding: 24px 24px;
+  padding: 16px 24px;
   margin: 32px auto;
-  border-radius: 4px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .sliderColumn {
   text-align: center;
-  margin: 16px 0 0 0;
+  margin: 16px 0;
 }
 .sliderRow {
   display: flex;
@@ -56,9 +56,9 @@ body {
   justify-content: space-around;
 }
 .label {
-  color: rgba(3, 70, 56, 0.85);
+  color: rgb(3, 70, 56);
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .ant-slider {
   width: 100%;
@@ -68,8 +68,10 @@ body {
 }
 .statisticsRow {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 .statistic {
   width: 160px;
@@ -84,7 +86,7 @@ body {
 .expectation,
 .segment {
   transition: opacity 1s;
-  color: rgba(3, 70, 56, 0.85);
+  color: rgb(3, 70, 56);
   font-weight: 400;
 }
 .expectationsContainer,
@@ -95,12 +97,33 @@ body {
 }
 .ant-statistic-title {
   color: rgba(3, 70, 56, 0.65);
+  font-size: 16px;
+  font-weight: 400;
 }
-.ant-statistic-content-value {
-  color: rgba(3, 70, 56, 0.85);
+.ant-input-number-input,
+.ant-statistic-content-value,
+.ant-statistic-content-suffix {
+  color: rgb(3, 70, 56);
+}
+.ant-slider {
+  margin: 12px 6px 12px;
+}
+.ant-slider-rail,
+.ant-slider-track,
+.ant-slider-step {
+  height: 6px;
+}
+.ant-slider-handle {
+  width: 16px;
+  height: 16px;
 }
 .ant-input-number-input {
   font-size: 16px;
+}
+ul {
+  margin-left: -20px;
+  font-size: 16px;
+  font-weight: 400;
 }
 @media (max-width: 574px) {
   .sliderWrapper {
@@ -109,7 +132,8 @@ body {
   }
   .resultsWrapper {
     width: 355px;
-    margin: 16px auto 72px;
+    margin: 16px auto 32px;
+    padding: 16px;
   }
   .label {
     font-size: 16px;

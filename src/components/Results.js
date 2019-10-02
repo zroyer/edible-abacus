@@ -31,7 +31,7 @@ const Results = (props) =>  {
     <div
       className='resultsWrapper'
       style={{
-        border: `4px solid ${dosageInfo.color}`,
+        border: `6px solid ${dosageInfo.color}`,
       }}
     >
       <div
@@ -40,16 +40,19 @@ const Results = (props) =>  {
         justify='center'
       >
         <Statistic
-          title='Total Recipe THC (mg)'
+          title='Total Recipe THC'
           className='statistic'
           value={props.recipeTotal}
           precision={2}
+          suffix='mg'
         />
         <Statistic
-          title='THC/serving (mg)'
+          title='THC/serving'
           className='statistic'
           value={props.recipePerServing}
-          precision={2} />
+          precision={2}
+          suffix='mg'
+        />
       </div>
       <Effects
         dosageInfo={dosageInfo}

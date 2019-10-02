@@ -18,7 +18,7 @@ function App() {
           role='img'
           aria-label='taco'
         >
-          Made with 🌮in Austin, TX
+          Made with 🌮 in Austin, TX
         </span>
       </div>
     </>
