@@ -72,6 +72,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  margin: 0 0 16px 0;
 }
 .statistic {
   width: 160px;
@@ -80,7 +81,7 @@ body {
   align-items: center;
 }
 .effectsContainer {
-  margin: 8px 0 0 0;
+  margin: 32px 0 0 0;
   width: 100%;
 }
 .expectation,
@@ -94,6 +95,7 @@ body {
   transition: opacity 1s;
   margin: 16px 0 0 0;
   text-align: start;
+  height: 102px;
 }
 .ant-statistic-title {
   color: rgb(3, 70, 56);
@@ -122,7 +124,7 @@ body {
   font-size: 16px;
 }
 ul {
-  margin-left: -20px;
+  margin: 0 0 0 -20px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -141,5 +143,11 @@ ul {
   }
   .footer {
     position: relative;
+  }
+  .expectationsContainer {
+    height: 120px
+  }
+  .segmentsContainer {
+    height: 144px;
   }
 }

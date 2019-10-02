@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Effects from './Effects.js'
+import KawaiiAnimation from './KawaiiAnimation.js'
 import firebase from '.././util/firebase';
 import { getLevel } from '.././util/helpers';
 import {
@@ -54,6 +55,9 @@ const Results = (props) =>  {
           suffix='mg'
         />
       </div>
+      <KawaiiAnimation
+        mood={dosageInfo.mood}
+      />
       <Effects
         dosageInfo={dosageInfo}
       />
