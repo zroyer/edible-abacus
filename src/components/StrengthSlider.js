@@ -4,12 +4,15 @@ import { Slider, InputNumber } from 'antd';
 const StrengthSlider = (props) => {
   return (
     <div className='sliderColumn'>
+      <span className='label'>
+        Strength
+      </span>
       <span
-        className='label'
+        className='labelIcon'
         role='img'
-        aria-label='weight'
+        aria-label='strength'
       >
-        Strength 💪
+        💪
       </span>
       <div className='sliderRow'>
         <Slider

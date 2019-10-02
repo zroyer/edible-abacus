@@ -4,12 +4,15 @@ import { Slider, InputNumber } from 'antd';
 const ServingsSlider = (props) => {
   return (
     <div className='sliderColumn'>
-      <span
-        className='label'
-        role='img'
-        aria-label='weight'
-      >
-        Servings 🍫
+      <span className='label'>
+        Servings
+        <span
+          className='labelIcon'
+          role='img'
+          aria-label='servings'
+        >
+          🍫
+        </span>
       </span>
       <div className='sliderRow'>
         <Slider

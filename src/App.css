@@ -13,7 +13,7 @@ body {
   justify-content: flex-start;
   padding: 0 32px;
   height: 50px;
-  background-color: #137BDA;
+  background-color: #69c0ff;
 }
 .footer {
   justify-content: center;
@@ -59,9 +59,13 @@ body {
   justify-content: space-around;
 }
 .label {
-  color: rgb(75, 78, 106);
+  color: rgb(58, 63, 73);
   font-size: 20px;
   font-weight: 700;
+}
+.labelIcon {
+  font-size: 28px;
+  padding: 0 0 0 4px;
 }
 .ant-slider {
   width: 100%;
@@ -90,7 +94,7 @@ body {
 .expectation,
 .segment {
   transition: opacity 1s;
-  color: rgb(75, 78, 106);
+  color: rgb(58, 63, 73);
   font-weight: 400;
 }
 .expectationsContainer,
@@ -101,7 +105,7 @@ body {
   height: 102px;
 }
 .ant-statistic-title {
-  color: rgb(75, 78, 106);
+  color: rgb(58, 63, 73);
   font-size: 12px;
   font-weight: 400;
   margin: 0;
@@ -109,7 +113,7 @@ body {
 .ant-input-number-input,
 .ant-statistic-content-value,
 .ant-statistic-content-suffix {
-  color: rgb(75, 78, 106);
+  color: rgb(58, 63, 73);
 }
 .ant-slider {
   margin: 12px 6px 12px;
