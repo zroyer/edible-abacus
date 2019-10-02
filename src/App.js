@@ -7,19 +7,26 @@ function App() {
     <>
       <div className='header'>
         <span className='headerTitle'>
-          Edible Abacus
+          edible abacus
         </span>
       </div>
       <Calculator />
       <div
         className='footer'
       >
-        <span
-          role='img'
-          aria-label='taco'
+        <a
+          className='githubLink'
+          href='https://github.com/zroyer/edible-abacus'
+          target='_blank'
+          rel='noopener noreferrer'
         >
-          Made with 🌮 in Austin, TX
-        </span>
+          <span
+            role='img'
+            aria-label='taco'
+          >
+            Made with 🌮 in Austin, TX
+          </span>
+        </a>
       </div>
     </>
   );
