@@ -14,7 +14,7 @@ const ServingsSlider = (props) => {
       <div className='sliderRow'>
         <Slider
           min={1}
-          max={100}
+          max={144}
           onChange={props.onChange}
           value={props.value}
           step={1}

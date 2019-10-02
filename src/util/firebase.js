@@ -1,9 +1,10 @@
 import * as firebase from "firebase/app";
 import "firebase/firestore";
+const { REACT_APP_FIREBASE_API_KEY } = process.env;
 
 //Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBOtrq4m2oAi_absYBeG3M0JjR3xDrNGNc",
+  apiKey: REACT_APP_FIREBASE_API_KEY,
   authDomain: "edible-abacus.firebaseapp.com",
   databaseURL: "https://edible-abacus.firebaseio.com",
   projectId: "edible-abacus",
@@ -15,5 +16,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
+console.log(process.env);
+console.log(firebaseConfig);
 export default firebase;

@@ -96,9 +96,10 @@ body {
   text-align: start;
 }
 .ant-statistic-title {
-  color: rgba(3, 70, 56, 0.65);
-  font-size: 16px;
+  color: rgb(3, 70, 56);
+  font-size: 12px;
   font-weight: 400;
+  margin: 0;
 }
 .ant-input-number-input,
 .ant-statistic-content-value,
