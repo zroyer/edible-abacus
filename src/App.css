@@ -58,14 +58,21 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+.sliderLabelRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .label {
   color: rgb(58, 63, 73);
   font-size: 20px;
   font-weight: 700;
 }
 .labelIcon {
+  color: rgb(255, 255, 255);
   font-size: 28px;
-  padding: 0 0 0 4px;
+  padding: 0 0 0 6px;
 }
 .ant-slider {
   width: 100%;
@@ -151,6 +158,11 @@ ul {
   }
   .label {
     font-size: 16px;
+  }
+  .labelIcon {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 0 0 0 6px;
   }
   .footer {
     position: relative;

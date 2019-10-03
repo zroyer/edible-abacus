@@ -4,8 +4,10 @@ import { Slider, InputNumber } from 'antd';
 const WeightSlider = (props) =>  {
   return (
     <div className='sliderColumn'>
-      <span className='label'>
-        Weight
+      <div className='sliderLabelRow'>
+        <span className='label'>
+          Weight
+        </span>
         <span
           className='labelIcon'
           role='img'
@@ -13,7 +15,7 @@ const WeightSlider = (props) =>  {
         >
           🌳
         </span>
-      </span>
+      </div>
       <div className='sliderRow'>
         <Slider
           min={0}
