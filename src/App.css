@@ -166,11 +166,13 @@ ul {
   .footer {
     position: relative;
   }
-  .expectationsContainer {
-    height: 120px
+  .expectation,
+  .segment {
+    font-size: 14px;
   }
+  .expectationsContainer,
   .segmentsContainer {
-    height: 144px;
+    height: 108px;
   }
   .statisticsRow {
     margin: 0 0 16px 0;
