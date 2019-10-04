@@ -12,8 +12,8 @@ class KawaiiAnimation extends Component {
     const body = styler(this.kawaiiRef.current.querySelector('svg'));
 
     tween({
-      from: { y: 10 },
-      to: { y: 25 },
+      from: { y: 0 },
+      to: { y: 15 },
       easings: easing.easeOut,
       duration: 1500,
       yoyo: Infinity,
@@ -23,7 +23,7 @@ class KawaiiAnimation extends Component {
   render() {
     const { mood } = this.props;
     return (
-      <div ref={this.kawaiiRef}>
+      <div ref={this.kawaiiRef} className='iceCream'>
         <IceCream
           size={220}
           mood={mood}

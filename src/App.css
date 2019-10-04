@@ -7,13 +7,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
+  height: 50px;
 }
 .header {
   justify-content: flex-start;
   padding: 0 32px;
-  height: 50px;
-  background-color: #69c0ff;
+  background-color: #69C0FF;
 }
 .footer {
   justify-content: center;
@@ -21,27 +21,20 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 30px;
 }
 .headerTitle {
-  font-size: 20px;
+  color: #FFFFFF;
+  font-size: 24px;
   font-style: italic;
-  font-weight: 800;
+  font-weight: 900;
 }
 .calculatorContainer {
   text-align: center;
 }
-.sliderWrapper {
-  background-color: rgb(255, 255, 255);
+.contentWrapper {
+  background-color: #FFFFFF;
   width: 555px;
-  padding: 8px 16px 8px;
-  margin: 32px auto;
-  border-radius: 10px;
-}
-.resultsWrapper {
-  background-color: rgb(255, 255, 255);
-  width: 555px;
-  padding: 16px 24px;
+  padding: 24px;
   margin: 32px auto;
   border-radius: 10px;
   display: flex;
@@ -49,8 +42,9 @@ body {
   align-items: center;
 }
 .sliderColumn {
+  width: 100%;
   text-align: center;
-  margin: 16px 0;
+  margin: 16px 0 0 0;
 }
 .sliderRow {
   display: flex;
@@ -65,12 +59,12 @@ body {
   align-items: center;
 }
 .label {
-  color: rgb(58, 63, 73);
+  color: #3A3F49;
   font-size: 20px;
   font-weight: 700;
 }
 .labelIcon {
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 28px;
   padding: 0 0 0 6px;
 }
@@ -84,35 +78,36 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
-  margin: 0 0 16px 0;
+  margin: 16px 0;
 }
 .statistic {
   width: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin:
 }
 .effectsContainer {
-  margin: 32px 0 0 0;
   width: 100%;
 }
 .expectation,
 .segment {
   transition: opacity 1s;
-  color: rgb(58, 63, 73);
+  color: #3A3F49;
   font-weight: 400;
 }
 .expectationsContainer,
 .segmentsContainer {
-  transition: opacity 1s;
-  margin: 16px 0 0 0;
   text-align: start;
   height: 102px;
 }
+.segmentsContainer {
+  margin: 16px 0 0 0;
+}
 .ant-statistic-title {
-  color: rgb(58, 63, 73);
+  color: #3A3F49;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
@@ -120,7 +115,7 @@ body {
 .ant-input-number-input,
 .ant-statistic-content-value,
 .ant-statistic-content-suffix {
-  color: rgb(58, 63, 73);
+  color: #3A3F49;
 }
 .ant-slider {
   margin: 12px 6px 12px;
@@ -133,6 +128,11 @@ body {
 .ant-slider-handle {
   width: 16px;
   height: 16px;
+  cursor: grab;
+}
+.ant-slider-handle:active,
+.ant-slider-handle:focus {
+  cursor: grabbing;
 }
 .ant-input-number-input {
   font-size: 16px;
@@ -143,15 +143,15 @@ ul {
   font-weight: 400;
 }
 .githubLink {
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 12px;
 }
+.githubLink:hover {
+  color: #FFFFFF;
+  font-weight: 500;
+}
 @media (max-width: 574px) {
-  .sliderWrapper {
-    width: 355px;
-    margin: 16px auto;
-  }
-  .resultsWrapper {
+  .contentWrapper {
     width: 355px;
     margin: 16px auto 32px;
     padding: 16px;
@@ -160,9 +160,9 @@ ul {
     font-size: 16px;
   }
   .labelIcon {
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
     font-size: 24px;
-    padding: 0 0 0 6px;
+    padding: 0 0 0 4px;
   }
   .footer {
     position: relative;
@@ -172,5 +172,23 @@ ul {
   }
   .segmentsContainer {
     height: 144px;
+  }
+  .statisticsRow {
+    margin: 0 0 16px 0;
+  }
+  .sliderLabelRow {
+    height: 24px;
+  }
+  svg {
+    width: 80px;
+    height: 160px;
+  }
+  .ant-statistic-content-value-int {
+    font-size: 20px
+  }
+  .ant-statistic-content-value-decimal,
+  .ant-statistic-content-suffix
+   {
+    font-size: 12px
   }
 }

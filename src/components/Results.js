@@ -1,51 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Effects from './Effects.js'
 import KawaiiAnimation from './KawaiiAnimation.js'
-import firebase from '.././util/firebase';
-import { getLevel } from '.././util/helpers';
+
 import {
   Statistic,
 } from 'antd';
 
-function useDosageInfo(dosageLevel) {
-  const [dosageInfo, setDosageInfo] = useState([]);
-  useEffect(() => {
-    firebase
-      .firestore()
-      .collection('effects')
-      .doc(dosageLevel)
-      .onSnapshot((doc) => {
-        const dosageInfo = {
-          id: dosageLevel,
-          ...doc.data()
-        };
-        setDosageInfo(dosageInfo);
-      });
-  }, [dosageLevel]);
-
-  return dosageInfo;
-}
-
 const Results = (props) =>  {
-  const dosageInfo = useDosageInfo(getLevel(props.recipePerServing));
   return (
-    <div
-      className='resultsWrapper'
-      style={{
-        border: `6px solid ${dosageInfo.color}`,
-      }}
-    >
+    <>
+      <Effects
+        dosageInfo={props.dosageInfo}
+      />
       <div
         className='statisticsRow'
         type='flex'
         justify='center'
       >
         <Statistic
-          title='Total Recipe THC'
+          title='THC/recipe'
           className='statistic'
           value={props.recipeTotal}
           precision={2}
           suffix='mg'
+        />
+        <KawaiiAnimation
+          mood={props.dosageInfo.mood}
         />
         <Statistic
           title='THC/serving'
@@ -55,13 +35,7 @@ const Results = (props) =>  {
           suffix='mg'
         />
       </div>
-      <KawaiiAnimation
-        mood={dosageInfo.mood}
-      />
-      <Effects
-        dosageInfo={dosageInfo}
-      />
-    </div>
+    </>
   );
 }
 
