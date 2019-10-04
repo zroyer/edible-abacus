@@ -131,8 +131,9 @@ body {
   height: 6px;
 }
 .ant-slider-handle {
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
+  margin: -8px 0 0 -11px;
   cursor: grab;
 }
 .ant-slider-handle:active,
@@ -205,8 +206,7 @@ ul {
     font-size: 20px
   }
   .ant-statistic-content-value-decimal,
-  .ant-statistic-content-suffix
-   {
-    font-size: 12px
+  .ant-statistic-content-suffix {
+    font-size: 12px;
   }
 }
