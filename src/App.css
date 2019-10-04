@@ -1,20 +1,26 @@
 @import '~antd/dist/antd.css';
+:root {
+  --main-bg-color: #F2A4B9;
+  --navbar-bg-color: #69C0FF;
+  --white: #FFFFFF;
+  --font-color: #3A3F49;
+}
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #F2A4B9;
+  background-color: var(--main-bg-color);
 }
 .header,
 .footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: #FFFFFF;
+  color: var(--white);
   height: 50px;
 }
 .header {
   justify-content: flex-start;
   padding: 0 32px;
-  background-color: #69C0FF;
+  background-color: var(--navbar-bg-color);
 }
 .footer {
   justify-content: center;
@@ -24,7 +30,7 @@ body {
   right: 0;
 }
 .headerTitle {
-  color: #FFFFFF;
+  color: var(--white);
   font-size: 24px;
   font-style: italic;
   font-weight: 700;
@@ -33,7 +39,7 @@ body {
   text-align: center;
 }
 .contentWrapper {
-  background-color: #FFFFFF;
+  background-color: var(--white);
   width: 555px;
   padding: 24px;
   margin: 32px auto;
@@ -60,12 +66,12 @@ body {
   align-items: center;
 }
 .label {
-  color: #3A3F49;
+  color: var(--font-color);
   font-size: 20px;
   font-weight: 600;
 }
 .labelIcon {
-  color: #FFFFFF;
+  color: var(--white);
   font-size: 28px;
   padding: 0 0 0 6px;
 }
@@ -94,7 +100,7 @@ body {
 }
 .expectation,
 .segment {
-  color: #3A3F49;
+  color: var(--font-color);
   font-weight: 400;
 }
 .expectationsContainer,
@@ -106,7 +112,7 @@ body {
   margin: 16px 0 0 0;
 }
 .ant-statistic-title {
-  color: #3A3F49;
+  color: var(--font-color);
   font-size: 12px;
   font-weight: 400;
   margin: 0;
@@ -114,7 +120,7 @@ body {
 .ant-input-number-input,
 .ant-statistic-content-value,
 .ant-statistic-content-suffix {
-  color: #3A3F49;
+  color: var(--font-color);
 }
 .ant-slider {
   margin: 12px 6px 12px;
@@ -142,12 +148,23 @@ ul {
   font-weight: 400;
 }
 .githubLink {
-  color: #FFFFFF;
+  color: var(--white);
   font-size: 12px;
 }
 .githubLink:hover {
-  color: #FFFFFF;
+  color: var(--white);
   font-weight: 500;
+}
+.fadeIn {
+  animation: fadeIn ease-in 0.15s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (max-width: 574px) {
   .contentWrapper {
@@ -159,7 +176,7 @@ ul {
     font-size: 16px;
   }
   .labelIcon {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 24px;
     padding: 0 0 0 4px;
   }

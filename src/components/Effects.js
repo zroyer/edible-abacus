@@ -11,7 +11,7 @@ const Effects = (props) =>  {
           {dosageInfo.expectations && dosageInfo.expectations.map((expectation) => {
             return (
               <li
-                className='expectation'
+                className='expectation fadeIn'
                 key={`${expectation.slice(0, 5)}-${dosageInfo.id}`}
               >
                 {expectation}
@@ -26,7 +26,7 @@ const Effects = (props) =>  {
           {dosageInfo.segments && dosageInfo.segments.map((segment) => {
             return (
               <li
-                className='segment'
+                className='segment fadeIn'
                 key={`${segment.slice(0, 5)}-${dosageInfo.id}`}
               >
                 {segment}
