@@ -161,7 +161,7 @@ ul {
 }
 .githubLink:hover {
   color: var(--white);
-  font-weight: 500;
+  font-weight: 600;
 }
 .fadeIn {
   animation: fadeIn ease-in 0.15s;
