@@ -1,11 +1,14 @@
 import React from 'react';
+import { Divider } from 'antd';
 
 const Effects = (props) =>  {
   const { dosageInfo } = props;
   return (
     <div className='effectsContainer'>
       <div className='expectationsContainer'>
-        <div className='label'>What To Expect</div>
+        <Divider orientation='left'>
+          <span className='label'>What To Expect</span>
+        </Divider>
         <ul
         >
           {dosageInfo.expectations && dosageInfo.expectations.map((expectation) => {
@@ -21,7 +24,9 @@ const Effects = (props) =>  {
         </ul>
       </div>
       <div className='segmentsContainer'>
-        <div className='label'>Who's It For?</div>
+        <Divider orientation='left'>
+          <span className='label'>Who's It For?</span>
+        </Divider>
         <ul>
           {dosageInfo.segments && dosageInfo.segments.map((segment) => {
             return (

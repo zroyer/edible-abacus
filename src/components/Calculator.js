@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Divider } from 'antd';
 import StrengthSlider from './StrengthSlider.js'
 import ServingsSlider from './ServingsSlider.js'
 import WeightSlider from './WeightSlider.js'
@@ -68,6 +69,7 @@ function Calculator() {
           value={state.numServings}
           onChange={(numServings) => setState(state => ({ ...state, numServings }))}
         />
+        <Divider />
         <Results
           dosageInfo={dosageInfo}
           recipeTotal={recipeTotal}
