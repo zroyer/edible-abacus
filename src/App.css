@@ -9,21 +9,23 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: var(--main-bg-color);
 }
-.header,
-.footer {
+.header {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: var(--white);
   height: 50px;
-}
-.header {
   justify-content: flex-start;
   padding: 0 32px;
   background-color: var(--navbar-bg-color);
 }
 .footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
+  color: var(--white);
+  height: 50px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -164,7 +166,7 @@ ul {
   font-weight: 600;
 }
 .fadeIn {
-  animation: fadeIn ease-in 0.15s;
+  animation: fadeIn ease-in 0.3s;
 }
 @keyframes fadeIn {
   from {
