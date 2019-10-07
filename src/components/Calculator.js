@@ -56,11 +56,6 @@ function Calculator() {
           border: `6px solid ${dosageInfo.color}`,
         }}
       >
-        <Results
-          dosageInfo={dosageInfo}
-          recipeTotal={recipeTotal}
-          recipePerServing={recipePerServing}
-        />
         <StrengthSlider
           value={state.strength}
           onChange={(strength) => setState(state => ({ ...state, strength }))}
@@ -72,6 +67,11 @@ function Calculator() {
         <ServingsSlider
           value={state.numServings}
           onChange={(numServings) => setState(state => ({ ...state, numServings }))}
+        />
+        <Results
+          dosageInfo={dosageInfo}
+          recipeTotal={recipeTotal}
+          recipePerServing={recipePerServing}
         />
       </div>
     </div>

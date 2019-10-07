@@ -51,7 +51,7 @@ body {
 .sliderColumn {
   width: 100%;
   text-align: center;
-  margin: 16px 0 0 0;
+  margin: 0 0 16px 0;
 }
 .sliderRow {
   display: flex;
@@ -87,7 +87,7 @@ body {
   justify-content: space-around;
   align-items: flex-end;
   width: 100%;
-  margin: 16px 0;
+  margin: 0 0 32px 0;
 }
 .statistic {
   width: 160px;
@@ -188,9 +188,11 @@ ul {
   .segment {
     font-size: 14px;
   }
-  .expectationsContainer,
-  .segmentsContainer {
+  .expectationsContainer {
     height: 108px;
+  }
+  .segmentsContainer {
+    height: 87px;
   }
   .statisticsRow {
     margin: 0 0 16px 0;

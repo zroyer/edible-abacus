@@ -9,9 +9,6 @@ import {
 const Results = (props) =>  {
   return (
     <>
-      <Effects
-        dosageInfo={props.dosageInfo}
-      />
       <div
         className='statisticsRow'
         type='flex'
@@ -35,6 +32,9 @@ const Results = (props) =>  {
           suffix='mg'
         />
       </div>
+      <Effects
+        dosageInfo={props.dosageInfo}
+      />
     </>
   );
 }
