@@ -26,10 +26,6 @@ body {
   justify-content: center;
   color: var(--white);
   height: 50px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  right: 0;
 }
 .headerTitle {
   color: var(--white);
