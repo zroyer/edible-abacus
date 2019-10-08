@@ -216,4 +216,7 @@ ul {
   .ant-statistic-content-suffix {
     font-size: 12px;
   }
+  .ant-divider-horizontal {
+    margin: 16px 0 32px;
+  }
 }
