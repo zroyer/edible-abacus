@@ -9,8 +9,7 @@ const Effects = (props) =>  {
         <Divider orientation='left'>
           <span className='label'>What To Expect</span>
         </Divider>
-        <ul
-        >
+        <ul>
           {dosageInfo.expectations && dosageInfo.expectations.map((expectation) => {
             return (
               <li

@@ -48,9 +48,7 @@ function Calculator() {
   const dosageInfo = useDosageInfo(getLevel(recipePerServing));
 
   return (
-    <div
-      className='calculatorContainer'
-    >
+    <div className='calculatorContainer'>
       <div
         className='contentWrapper'
         style={{
