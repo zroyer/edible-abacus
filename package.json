@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.23.1",
-    "firebase": "^7.0.0",
+    "firebase": "^10.9.0",
     "popmotion": "^8.7.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
